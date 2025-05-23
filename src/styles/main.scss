@@ -1,5 +1,43 @@
+@use 'variables';
+@use 'hero';
+@use 'header';
+@use 'sinopse';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Afacad', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 6px;
+    color: variables.$corBrilho;
+    padding-bottom: 12px;
+}
+
+@mixin title($fontSize: 28px) {
+    font-size: $fontSize;
+    text-transform: uppercase;
+    color: variables.$corHover;
+    padding-bottom: 12px
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }

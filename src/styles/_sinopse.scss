@@ -1,0 +1,40 @@
+@use 'variables';
+
+.sinopse {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: variables.$corFundo;
+    align-items: start;
+
+    @media (max-width: 768px) {
+        display: block;
+        padding: 40px 40px;
+    }
+
+    &__cartaz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 360px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+
+            @media (max-width: 768px) {
+            max-width: 300px;
+        }
+        }
+    }
+
+    &__descricao, &__info {
+
+        @media (max-width: 768px) {
+            padding-top: 20px;
+        }
+    }
+}

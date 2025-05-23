@@ -1,0 +1,73 @@
+@use 'variables';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: variables.$corFundoGlass;
+
+    @media (max-width: 768px) {
+        position: static;
+        background-color: variables.$corFundo;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 20px;
+
+        @media (max-width: 768px) {
+            display: block;
+            text-align: center;
+        }
+
+        &__title {
+            a {
+                color: variables.$corBrilho;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 4px;
+                color: variables.$corBrilho;
+
+                &:hover {
+                    color: variables.$corHover;
+                    transition: 0.3s;
+                }
+            }
+    }
+    
+    &__links {
+        display: flex;
+        text-align: right;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 10px;
+
+            a {
+                color: variables.$corBrilho;
+                font-size: 16px;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: variables.$corHover;
+                    transition: 0.3s;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,33 @@
+.hero {
+    height: 100vh;
+    background-image: url('../images/interstellar_01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 768px) {
+        height: 50vh;
+    }
+
+    &__trailer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-top: 80px;
+
+        @media (max-width: 768px) {
+            align-items: flex-start;
+        }
+
+        iframe {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+
+            @media (max-width: 768px) {
+                max-width: 80vw;
+                max-height: 50vw;
+            }
+        }
+    }
+}

@@ -2,6 +2,14 @@
   "name": "exec-mod-21---landing-page-filme",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/chathiago/interestelar_filme#readme",
+  "bugs": {
+    "url": "https://github.com/chathiago/interestelar_filme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chathiago/interestelar_filme.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
@@ -152,8 +160,9 @@
     "yargs-parser": "^20.2.9"
   },
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.0.0",
     "gulp-sass": "^6.0.1",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.88.0"
