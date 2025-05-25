@@ -1,0 +1,43 @@
+@use 'variables';
+
+.galeria {
+    text-align: center;
+    background-color: variables.$corFundo;
+    padding: 0px 40px;
+
+    @media (max-width: 768px) {
+        text-align: left;
+        padding-top: 40px;
+    }
+
+    .title {
+        padding-bottom: 40px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        &__item {
+            @media (max-width: 768px) {
+                padding-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.01);
+                    transition: transform 0.3s ease;
+                }
+            }
+        }
+    }
+}

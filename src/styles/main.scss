@@ -2,6 +2,8 @@
 @use 'hero';
 @use 'header';
 @use 'sinopse';
+@use 'gallery';
+@use 'footer';
 
 * {
     margin: 0;
@@ -19,6 +21,11 @@
     padding-bottom: 12px;
 }
 
+@mixin textNeutral($fontSize: 16px) {
+    font-size: $fontSize;
+    color: variables.$corBrilho;
+}
+
 @mixin title($fontSize: 28px) {
     font-size: $fontSize;
     text-transform: uppercase;
@@ -31,6 +38,14 @@
 
     @media (max-width: 768px) {
         @include text(14px);
+    }
+}
+
+.textNeutral {
+    @include textNeutral;
+
+    @media (max-width: 768px) {
+        @include textNeutral(14px);
     }
 }
 

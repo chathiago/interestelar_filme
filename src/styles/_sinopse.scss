@@ -4,9 +4,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    padding: 40px 20px;
-    background-color: variables.$corFundo;
+    padding: 60px 20px;
     align-items: start;
+    background-color: variables.$corFundo;
 
     @media (max-width: 768px) {
         display: block;
