@@ -2,7 +2,7 @@
 
 .sinopse {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 60px 20px;
     align-items: start;
@@ -13,10 +13,22 @@
         padding: 40px 40px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     &__cartaz {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            display: none;
+        }
 
         img {
             max-width: 360px;

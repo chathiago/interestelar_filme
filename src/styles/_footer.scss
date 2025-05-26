@@ -13,6 +13,11 @@
         text-align: center;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     &__social {
         display: flex;
         justify-content: center;

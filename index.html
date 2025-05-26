@@ -17,20 +17,21 @@
             </h1>
             <ul class="header__container__links">
                 <li class="header__container__links__item">
-                    <a href="#">Trailer</a>
+                    <a href="#navTrailer">Trailer</a>
                 </li>
                 <li class="header__container__links__item">
-                    <a href="#">Sinopse</a>
+                    <a href="#navSinopse">Sinopse</a>
                 </li>
                 <li class="header__container__links__item">
-                    <a href="#">Assistir</a>
+                    <a href="#navGaleria">Galeria</a>
                 </li>
             </ul>
         </div>
     </header>
-    <section class="hero">
+    <section id="navTrailer" class="hero">
         <div class="hero__trailer">
-            <iframe width="950" height="480"
+            <img class="hero__trailer__thumb" src="./dist/images/interstellar_video_thumb.png" alt="thumbnail do trailer">
+            <iframe id="video" width="950" height="480"
             src="https://www.youtube.com/embed/hHBsKHVLAYc?si=0C7LSJCWRG1f7Fq9"
             title="YouTube video player"
             frameborder="0"
@@ -39,7 +40,7 @@
             allowfullscreen></iframe>
         </div>
     </section>
-    <section class="sinopse">
+    <section id="navSinopse" class="sinopse">
         <div class="sinopse__cartaz">
             <img src="./dist/images/interstellar_02_lite.jpg" alt="Cena de Interestelar na superfície de um planeta">
         </div>
@@ -67,7 +68,7 @@
             <p class="text">Ação, Aventura, Drama, Sci-fi</p>
         </div>
     </section>
-    <section class="galeria">
+    <section id="navGaleria" class="galeria">
         <h2 class="title">Galeria</h2>
         <div class="galeria__container">
             <div class="galeria__container__item">
@@ -92,7 +93,7 @@
     </section>
     <section class="rodape">
         <div class="rodape__copyright">
-            <p class="text">
+            <p class="textNeutral">
                 TM & © 2025 Warner Bros. Entertainment Inc.
                 Todos os direitos reservados.
             </p>
